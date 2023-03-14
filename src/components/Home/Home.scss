@@ -1,0 +1,209 @@
+$bear: #00899d;
+.home_sec-2 {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+    // margin-top: 50px;
+    h1 {
+        color: $bear;
+        font-weight: 600;
+        font-size: 60px;
+        border-bottom: 2px solid #00899d;
+        border-top: 2px solid #00899d;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+    .service_list {
+        display: grid;
+        // flex-wrap: wrap;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        grid-gap: 20px;
+        .service_card {
+            background-color: #f6f6f6;
+            padding: 10px;
+            img {
+                width: 100%;
+                height: 285px;
+                object-fit: cover;
+                object-position: 50% 50%;
+            }
+        }
+    }
+}
+.home_sec-3 {
+    width: 100%;
+    background-color: #f6f6f6;
+    padding: 80px 0px;
+    // margin-top: 40px;
+    .sec-3_list {
+        display: grid;
+        // flex-wrap: wrap;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+        grid-gap: 20px;
+        .block {
+            // width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 50px;
+            h4 {
+                font-size: 20px;
+                font-weight: normal;
+                margin-bottom: 10px;
+            }
+            .hexagon {
+                width: 75px;
+                height: 80px;
+                background: #2c3e50;
+                display: flex;
+                justify-content: center;
+                transition: 0.5s;
+                align-items: center;
+                -webkit-clip-path: polygon(
+                    50% 0%,
+                    100% 25%,
+                    100% 75%,
+                    50% 100%,
+                    0% 75%,
+                    0% 25%
+                );
+                clip-path: polygon(
+                    50% 0%,
+                    100% 25%,
+                    100% 75%,
+                    50% 100%,
+                    0% 75%,
+                    0% 25%
+                );
+            }
+            &:hover {
+                color: #00899d;
+                .hexagon {
+                    background: #00899d;
+                }
+            }
+        }
+        > .sec-3_list_button {
+            display: none;
+        }
+    }
+}
+.home_sec-4 {
+    width: 100%;
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://psk-triada.ru/img/portfolio/private/2/6_big.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        color: white;
+        font-size: 60px;
+    }
+}
+.home_sec-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .home_sec-5_img_block {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        img {
+            width: 100%;
+        }
+    }
+    h1 {
+        color: $bear;
+        margin: 50px 0px;
+        font-weight: 500;
+        font-size: 42px;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .home_sec-2 {
+        h1 {
+            font-size: 40px;
+        }
+        .service_list {
+            grid-template-columns: 1fr !important;
+        }
+    }
+    .block {
+        h4 {
+            font-size: 20px !important;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+    .sec-3_list {
+        grid-template-columns: 1fr 1fr !important;
+    }
+    .home_sec-4 {
+        height: 400px;
+        text-align: center;
+        h1 {
+            font-size: 48px;
+        }
+    }
+    .home_sec-5_img_block {
+        grid-template-columns: 1fr 1fr !important;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .sec-3_list {
+        grid-template-columns: 1fr !important;
+    }
+    .sec-3_list_button {
+        width: 80% !important;
+        height: 30px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        border: none !important;
+        background-color: #00899d !important;
+        color: white !important;
+        font-size: 16px !important;
+        border-radius: 3px !important;
+        margin: auto;
+    }
+    .block {
+        h4 {
+            font-size: 24px !important;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+    #netu {
+        display: none;
+    }
+    #est {
+        display: flex;
+    }
+    .service_card {
+        img {
+            height: 200px !important;
+        }
+    }
+}
+
+@media all and (max-width: 500px) {
+    .home_sec-5_img_block {
+        grid-template-columns: 1fr !important;
+    }
+}

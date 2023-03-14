@@ -1,0 +1,25 @@
+.sidebar {
+    position: absolute;
+    top: 0px;
+    width: 60vw;
+    height: 100vh;
+    background-color: white;
+    z-index: 3;
+    padding: 20px;
+    .close {
+        display: flex;
+        justify-content: end;
+    }
+    .line {
+        height: 1px;
+        width: 100%;
+        background-color: gray;
+    }
+    > h3 {
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover {
+            color: #00899d;
+        }
+    }
+}

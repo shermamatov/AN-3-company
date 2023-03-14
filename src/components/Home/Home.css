@@ -1,0 +1,93 @@
+.container__attachment {
+    width: 100%;
+    height: 580px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://keramstroi.ru/a5ff2cdf87b24124d9bdfae367b36bbe.jpg);
+}
+
+.attachment__footer {
+    width: 100%;
+    height: 120px;
+    background-color: black;
+}
+
+.attachment__body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.365);
+}
+
+.attachment__body-text {
+    width: 90%;
+    align-items: center;
+    display: flex;
+    gap: 4%;
+    flex-direction: column;
+    height: 70%;
+    margin: auto;
+}
+.attachment__body-text h1 {
+    font-size: 4em;
+    width: 100%;
+    font-family: "Montserrat";
+    color: #fff;
+    text-align: center;
+    word-wrap: break-word;
+}
+.border__line {
+    width: 30%;
+    height: 3px;
+    border-radius: 1px;
+    background-color: #fff;
+}
+.attachment__body-text .p-text {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    /* margin-left: 12%; */
+    align-items: center;
+    /* text-align: center; */
+}
+.attachment__body-text .p-text p {
+    color: #fff;
+    font-family: "Montserrat";
+    text-align: center;
+    font-size: 22px;
+    word-wrap: break-word;
+    width: 90%;
+    margin: auto;
+}
+
+@media all and (max-width: 1024px) {
+    .attachment__body-text > h1 {
+        font-size: 50px;
+    }
+}
+
+@media all and (max-width: 640px) {
+    .attachment__body-text > h1 {
+        font-size: 42px;
+    }
+    .container__attachment {
+        height: 420px;
+    }
+    .p-text {
+        display: none !important;
+    }
+    .border__line {
+        display: none !important;
+    }
+    .attachment__body-text {
+        height: auto;
+    }
+}
+@media all and (max-width: 460px) {
+    .attachment__body-text > h1 {
+        font-size: 36px;
+    }
+}

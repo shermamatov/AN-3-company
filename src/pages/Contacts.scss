@@ -1,0 +1,39 @@
+.contact_main_block {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 50px;
+    .contact_body {
+        h2 {
+            cursor: pointer;
+            transition: 0.5s;
+            &:hover {
+                color: #00899d;
+            }
+        }
+    }
+}
+.contact_header {
+    font-size: 48px;
+    color: #00899d;
+    text-align: center;
+}
+@media all and (max-width: 600px) {
+    .contact_main_block {
+        width: 100%;
+        .contact_body {
+            width: 80%;
+            margin: auto;
+            h2 {
+                font-size: 22px;
+            }
+        }
+    }
+    .contact_header {
+        font-size: 42px;
+    }
+    .cert_img_block {
+        > img {
+            width: 50% !important;
+        }
+    }
+}
